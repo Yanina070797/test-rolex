@@ -1,0 +1,56 @@
+.body {
+    font-family: "Inter", sans-serif;
+    color: #2e2e2e;
+    background: #fff;
+}
+
+.body.is-dark {
+    background: #1f1f1f;
+    color: #f2f2f2;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.container {
+    max-width: 338px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media screen and (min-width:1280px) {
+
+    .container {
+        max-width: 1280px;
+        padding: 0 128px;
+    }
+
+}
+
+.sr-only {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}

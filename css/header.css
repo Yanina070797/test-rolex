@@ -1,0 +1,48 @@
+.header {
+    padding: 18px 24px;
+}
+
+.header .is-dark {
+    display: none;
+}
+
+.header .nav-menu {
+    display: none;
+}
+
+.header .logo-header-black {
+    width: 74px;
+    height: 20px;
+}
+
+.header .svg {
+    width: 20px;
+    height: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:1280px) {
+
+    .header .header-burger-menu-button {
+        display: none;
+    }
+
+    .header .nav-menu {
+        display: block;
+    }
+
+    .header .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header .nav-list-link {
+        font-weight: 500;
+        font-size: 15px;
+        color: #2e2e2e;
+    }
+}

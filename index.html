@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <img
+          srcset="
+            ./images/logo-header-black.png   1x,
+            ./images/logo-header-black@2.png 2x
+          "
+          src="./images/logo-header-black.png"
+          alt="logo header black"
+          class="logo-header-black"
+        />
+        <img
+          srcset="
+            ./images/logo-header-white.png   1x,
+            ./images/logo-header-white@2.png 2x
+          "
+          src="./images/logo-header-white.png"
+          alt="logo header white"
+          class="logo-header-white is-dark"
+        />
+
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Featured</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Products</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">New</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="svg-wrapper">
+          <button class="header-dark-button">
+            <svg class="svg header-dark-svg">
+              <use href="./images/icons.svg#icon-dark"></use>
+            </svg>
+          </button>
+          <button class="header-light-button is-dark">
+            <svg class="svg header-light-svg">
+              <use href="./images/icons.svg#icon-light"></use>
+            </svg>
+          </button>
+          <button class="header-basket-button">
+            <svg class="svg header-basket-svg">
+              <use href="./images/icons.svg#icon-basket"></use>
+            </svg>
+          </button>
+          <button class="header-burger-menu-button">
+            <svg class="svg header-burger-menu-svg">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero"><div class="container"></div></section>
+      <section class="featured"><div class="container"></div></section>
+      <section class="story"><div class="container"></div></section>
+      <section class="products"><div class="container"></div></section>
+      <section class="feedbacks"><div class="container"></div></section>
+      <section class="new-arrivals"><div class="container"></div></section>
+      <section class="subscribe"><div class="container"></div></section>
+    </main>
+    <footer class="footer"><div class="container"></div></footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
