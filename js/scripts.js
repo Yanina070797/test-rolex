@@ -1,7 +1,11 @@
 //Dark-mode
 const body = document.querySelector(".body");
-const headerDarkButton = document.querySelector(".header-dark-button");
+const headerButtons = document.querySelectorAll(
+  ".header-dark-button, .header-light-button",
+);
 
-headerDarkButton.addEventListener("click", () => {
-  body.classList.toggle("is-dark");
+headerButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    body.classList.toggle("is-dark");
+  });
 });
