@@ -84,6 +84,11 @@
         color: #ffb568;
     }
 
+    .body.is-dark .header .nav-list-link:hover,
+    .body.is-dark .header .nav-list-link:focus {
+        color: #ffb568;
+    }
+
     .body.is-dark .header .nav-list-link {
         color: #f2f2f2;
     }
