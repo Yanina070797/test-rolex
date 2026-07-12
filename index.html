@@ -24,41 +24,43 @@
   <body class="body">
     <header class="header">
       <div class="container">
-        <img
-          srcset="
-            ./images/logo-header-black.png   1x,
-            ./images/logo-header-black@2.png 2x
-          "
-          src="./images/logo-header-black.png"
-          alt="logo header black"
-          class="logo-header-black"
-        />
-        <img
-          srcset="
-            ./images/logo-header-white.png   1x,
-            ./images/logo-header-white@2.png 2x
-          "
-          src="./images/logo-header-white.png"
-          alt="logo header white"
-          class="logo-header-white"
-        />
+        <div class="logo-nav-wrapper">
+          <img
+            srcset="
+              ./images/logo-header-black.png   1x,
+              ./images/logo-header-black@2.png 2x
+            "
+            src="./images/logo-header-black.png"
+            alt="logo header black"
+            class="logo-header-black"
+          />
+          <img
+            srcset="
+              ./images/logo-header-white.png   1x,
+              ./images/logo-header-white@2.png 2x
+            "
+            src="./images/logo-header-white.png"
+            alt="logo header white"
+            class="logo-header-white"
+          />
 
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">Home</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">Featured</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">Products</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#">New</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="#">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="#">Featured</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="#">Products</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-link" href="#">New</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="svg-wrapper">
           <button class="header-button header-dark-button">
             <svg class="svg header-dark-svg">
@@ -84,7 +86,44 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero"><div class="container"></div></section>
+      <section class="hero">
+        <div class="container">
+          <ul class="hero-container-item hero-social-list">
+            <li class="hero-social-item">
+              <a href="#" class="hero-social-link">Facebook</a>
+            </li>
+            <li class="hero-social-item">
+              <a href="#" class="hero-social-link">Twitter</a>
+            </li>
+            <li class="hero-social-item">
+              <a href="#" class="hero-social-link">Instagram</a>
+            </li>
+          </ul>
+          <img
+            srcset="./images/hero.png 1x, ./images/hero@2.png 2x"
+            src="./images/hero.png"
+            alt="Rolex watch"
+            class="hero-image hero-container-item"
+          />
+
+          <div class="hero-description-wrapper hero-container-item">
+            <h2 class="hero-title">NEW WATCH COLLECTIONS B720</h2>
+            <p class="hero-text">
+              Latest arrival of the new imported watches of the B720 series,
+              with a modern and resistant design.
+            </p>
+            <p class="hero-price">$1245</p>
+            <div class="hero-buttons-wrapper">
+              <button class="hero-discover-button" type="button">
+                Discover
+              </button>
+              <button class="hero-cart-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="featured"><div class="container"></div></section>
       <section class="story"><div class="container"></div></section>
       <section class="products"><div class="container"></div></section>

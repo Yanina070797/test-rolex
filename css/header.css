@@ -16,7 +16,6 @@
 
 .header .header-light-button {
     display: none;
-    fill: #f2f2f2;
 }
 
 .body.is-dark .header .header-light-button {
@@ -81,11 +80,16 @@
         color: #2e2e2e;
     }
 
+    .header .nav-list-link:hover, .header .nav-list-link:focus {
+        color: #ffb568;
+    }
+
     .body.is-dark .header .nav-list-link {
         color: #f2f2f2;
     }
-}
 
-.body.is-dark .header .header-button {
-    fill: #f2f2f2;
+    .header .logo-nav-wrapper {
+        display: flex;
+        gap: 62px;
+    }
 }
