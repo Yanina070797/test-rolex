@@ -1,0 +1,155 @@
+.featured .featured-title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #2e2e2e;
+    margin: 48px 0;
+    text-align: center;
+    position: relative;
+    padding-top: 16px;
+}
+
+.featured .featured-title::before {
+    content: "";
+    border: 1px solid #ffb568;
+    width: 67px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.featured .featured-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.featured .featured-list-item {
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    padding: 40px 86px;
+    position: relative;
+}
+
+.featured .featured-sale-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) translateY(-24px);
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    background: #ffb568;
+    padding: 16px 8px;
+}
+
+.featured .featured-image {
+    width: 140px;
+    height: 214px;
+    margin-bottom: 16px;
+}
+
+.featured .featured-watch-name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #2e2e2e;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.featured .featured-price {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #ffb568;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.featured .feautured-cart-button {
+    display: none;
+    width: 146px;
+    height: 55px;
+    background: #2b2b2b;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    padding: 20px 32px;
+}
+
+.featured .featured-list-item:hover .feautured-cart-button {
+    display: block;
+}
+
+@media screen and (min-width:1280px) {
+
+    .featured .featured-title {
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        margin-top: 88px;
+        margin-bottom: 64px;
+        text-align: center;
+        position: relative;
+    }
+
+    .featured .featured-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 48px;
+
+    }
+
+    .featured .featured-list-item {
+        padding: 32px 86px;
+        transition: box-shadow 250ms ease-in-out;
+    }
+
+    .featured .featured-list-item:hover {
+        box-shadow: 0 12px 32px 0 rgba(51, 51, 51, 0.1);
+    }
+
+    .featured .featured-sale-text {
+        font-size: 14px;
+    }
+
+
+
+
+    .featured .feautured-cart-button {
+        font-size: 14px;
+        width: 152px;
+        height: 56px;
+    }
+
+    .body.is-dark .featured .feautured-cart-button {
+        box-shadow: 0 12px 32px 0 rgba(51, 51, 51, 0.1);
+    }
+}
+
+.body.is-dark .featured .featured-title {
+    color: #f2f2f2;
+}
+
+.body.is-dark .featured .featured-list-item {
+    background: #292929;
+    border: 1px solid #333;
+
+}
+
+.body.is-dark .featured .featured-watch-name {
+    color: #f2f2f2;
+}
+
+.body.is-dark .featured .feautured-cart-button {
+    background: #3d3d3d;
+}
