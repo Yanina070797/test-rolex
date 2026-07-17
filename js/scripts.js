@@ -9,3 +9,35 @@ headerButtons.forEach((button) => {
     body.classList.toggle("is-dark");
   });
 });
+
+// Feedbacks slider
+
+const feedbackItems = document.querySelectorAll(".feedback-list-item");
+const feedbackNextButton = document.querySelector(".feedbacks-next-button");
+const feedbackBackButton = document.querySelector(".feedbacks-back-button");
+
+let currentFeedbackIndex = 0;
+
+function showFeedback() {
+  feedbackItems.forEach((feedback) => {
+    feedback.classList.remove("is-active");
+  });
+
+  feedbackItems[currentFeedbackIndex].classList.add("is-active");
+}
+
+feedbackNextButton.addEventListener("click", () => {
+  if (currentFeedbackIndex < feedbackItems.length - 1) {
+    currentFeedbackIndex++;
+
+    showFeedback();
+  }
+});
+
+feedbackBackButton.addEventListener("click", () => {
+  if (currentFeedbackIndex > 0) {
+    currentFeedbackIndex--;
+
+    showFeedback();
+  }
+});
