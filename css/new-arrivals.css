@@ -1,0 +1,132 @@
+.new-arrivals .arrivals-title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #2e2e2e;
+    margin-top: 64px;
+    margin-bottom: 48px;
+    text-align: center;
+    position: relative;
+    padding-top: 16px;
+}
+
+.new-arrivals .arrivals-title::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ffb568;
+    width: 67px;
+    height: 0px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.new-arrivals .arrivals-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    overflow-x: auto;
+
+
+}
+
+.new-arrivals .arrivals-list-item {
+    width: 312px;
+    flex-shrink: 0;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.new-arrivals .arrivals-text-new {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #ffb568;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.new-arrivals .arrivals-watch-image {
+    width: 130px;
+    height: 225px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.new-arrivals .arrivals-watch-name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #2e2e2e;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.new-arrivals .arrivals-watch-price {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #ffb568;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+.new-arrivals .arrivals-cart-button {
+    display: none;
+    width: 152px;
+    height: 56px;
+    background: #000;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.new-arrivals .arrivals-list-item:hover .arrivals-cart-button {
+    display: block;
+}
+
+@media screen and (min-width:1280px) {
+
+    .new-arrivals .arrivals-list-item {
+        width: 238px;
+        align-items: flex-start;
+    }
+
+    .new-arrivals .arrivals-list {
+        overflow-x: visible;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    .new-arrivals .arrivals-title {
+        font-size: 20px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.body.is-dark .arrivals-list-item {
+    background: #292929;
+    border: 1px solid #333;
+
+}
+
+.body.is-dark .arrivals-watch-name {
+    color: #f2f2f2;
+}
+
+.body.is-dark .arrivals-title {
+    color: #f2f2f2;
+}
+
+.body.is-dark .arrivals-cart-button {
+    background: #3d3d3d;
+}

@@ -41,3 +41,20 @@ feedbackBackButton.addEventListener("click", () => {
     showFeedback();
   }
 });
+
+//Burger-menu close and open
+const headerBurgerMenuButton = document.querySelector(
+  ".header-burger-menu-button",
+);
+const mobileBurgerMenuCloseButton = document.querySelector(
+  ".mobile-burger-menu-close-button",
+);
+const mobileBurgerMenu = document.querySelector(".mobile-burger-menu");
+
+headerBurgerMenuButton.addEventListener("click", () => {
+  mobileBurgerMenu.classList.add("is-open");
+});
+
+mobileBurgerMenuCloseButton.addEventListener("click", () => {
+  mobileBurgerMenu.classList.remove("is-open");
+});

@@ -1,0 +1,42 @@
+.mobile-burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mobile-burger-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.mobile-burger-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-top: 96px;
+}
+
+.mobile-burger-menu-close-button {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+}
+
+.mobile-burger-menu-link {
+    font-weight: 500;
+    font-size: 24px;
+    color: #2e2e2e;
+}
+
+.mobile-burger-menu-link:hover {
+    color: #ffb568;
+}
